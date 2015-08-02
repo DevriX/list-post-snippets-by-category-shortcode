@@ -13,3 +13,6 @@ An example use:
 <h5><code>[posts-by-cat category="uncategorized" thumbnail="http://s.elegance-style.com/dv/i/thumb.jpg"]</code></h5>
 
 For support or ideas, find me online at http://sam.elegance-style.com
+
+<a href="http://sam.elegance-style.com/contact-me/?reason=support+list+post+snippets+by+category+shortcode"><h4>Support</h4></a>
+<a href="http://go.elegance-style.com/donate/"><h4>Donate</h4></a>

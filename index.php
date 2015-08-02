@@ -79,3 +79,17 @@ function elh_posts_by_cat ( $atts ) {
 
 }
 add_shortcode('posts-by-cat', 'elh_posts_by_cat');
+
+function lpsbcs_support_link( $links ) {
+    $settings_link = '<a href="http://sam.elegance-style.com/contact-me/?reason=support+list+post+snippets+by+category+shortcode" target="_new">' . __( 'Support' ) . '</a>';
+    array_push( $links, $settings_link );
+  	return $links;
+}
+function lpsbcs_donate_link( $links ) {
+    $settings_link = '<a href="http://go.elegance-style.com/donate/" target="_new">' . __( 'Donate' ) . '</a>';
+    array_push( $links, $settings_link );
+  	return $links;
+}
+$plugin = plugin_basename( __FILE__ );
+add_filter( "plugin_action_links_$plugin", 'lpsbcs_support_link' );
+add_filter( "plugin_action_links_$plugin", 'lpsbcs_donate_link' );
